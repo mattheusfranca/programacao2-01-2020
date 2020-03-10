@@ -1,6 +1,6 @@
 package br.udesc.prog2.exercicio.banco;
 
-public class ContaCorrente {
+public class ContaCorrente implements Comparable<ContaCorrente>{
 	
 	private int codigo;
 	private String nomeCorrentista;
@@ -27,6 +27,10 @@ public class ContaCorrente {
 		return nomeCorrentista;
 	}
 	
+	public void setNomeCorrentista(String nomeCorrentista) {
+		this.nomeCorrentista = nomeCorrentista;
+	}
+
 	public Banco getBanco() {
 		return banco;
 	}
@@ -51,6 +55,14 @@ public class ContaCorrente {
 	
 	public String getDetalhesConta() {
 		return this.toString();
+	}
+
+	@Override
+	public int compareTo(ContaCorrente o) {
+		if(saldo > o.getSaldo())
+			return 1;
+		else 
+			return -1;
 	}
 
 }

@@ -50,5 +50,16 @@ public class Banco {
 		return null;
 	}
 	
+	@Override
+	public String toString() {
+		return this.codigo + " - " + this.nome;
+	}
+	
+	public void imprimeContas() {
+		System.out.println("\nApresentando contas :\n");
+		for(ContaCorrente conta : getContas()) {
+			System.out.println(conta);
+		}
+	}
 	
 }

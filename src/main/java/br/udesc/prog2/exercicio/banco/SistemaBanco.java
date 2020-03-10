@@ -1,6 +1,12 @@
 package br.udesc.prog2.exercicio.banco;
 
-public class SistemaBanco {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class SistemaBanco  {
 
 	public static void main(String[] args) {
 		
@@ -23,11 +29,5 @@ public class SistemaBanco {
 		
 		contaCorrenteBradesco.saque(100f);
 		contaPopupancaBradesco.saque(100f);
-		
-		for(ContaCorrente conta : bradesco.getContas()) {
-			System.out.println(conta);
-		}
-		
-		
 	}
 }
