@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 
-public class TelaInicial extends JFrame{
+public class AppSwing extends JFrame{
 	
 	private JButton btn1;
 	private JPanel contentPane;
@@ -25,7 +25,7 @@ public class TelaInicial extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		TelaInicial telaInicial = new TelaInicial();
+		AppSwing telaInicial = new AppSwing();
 		//Atribuindo acao criada para o botão
 		AcaoBotao acao = new AcaoBotao();
 		telaInicial.btn1.addActionListener(acao);
@@ -33,7 +33,7 @@ public class TelaInicial extends JFrame{
 	}
 
 	//Incializando tela (desenhando componentes da tela)
-	public TelaInicial() {
+	public AppSwing() {
 		setTitle("Tela Inicial");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 239, 183);

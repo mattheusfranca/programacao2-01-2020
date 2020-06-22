@@ -1,4 +1,4 @@
-package br.udesc.prog2.exemplo.classeabstrata;
+package br.udesc.prog2.exemplo.heraca.polimorfismo;
 
 /*
 Classe abstrata não é instaciável e é utilizada como base para outras classes.

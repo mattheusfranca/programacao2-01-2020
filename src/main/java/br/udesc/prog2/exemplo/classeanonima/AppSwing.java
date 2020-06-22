@@ -9,14 +9,14 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 
-public class TelaInicial extends JFrame{
+public class AppSwing extends JFrame{
 	
 	private JButton btn1;
 	private JPanel contentPane;
 	
 	public static void main(String[] args) {
 		
-		TelaInicial telaInicial = new TelaInicial();
+		AppSwing telaInicial = new AppSwing();
 		
 		//Classe anonima sendo instanciada a partir da interface ActionListener e armazenada no objeto acao
 		ActionListener acao = new ActionListener() {
@@ -34,7 +34,7 @@ public class TelaInicial extends JFrame{
 	}
 	
 	//Incializando tela (desenhando componentes da tela)
-	public TelaInicial() {
+	public AppSwing() {
 		setTitle("Tela Inicial");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 239, 183);
