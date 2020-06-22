@@ -1,6 +1,5 @@
 package br.udesc.prog2.exemplo.collections.conjunto;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -9,7 +8,7 @@ import java.util.function.Consumer;
 /*
  * Para o Set funcionar corretamente precisamos garantir que o hashcode e o equals foram implementados de forma adequada
  */
-public class Conjunto {
+public class App {
 	public static void main(String[] args) {
 		Set<Banco> bancos = new HashSet<Banco>();
 		

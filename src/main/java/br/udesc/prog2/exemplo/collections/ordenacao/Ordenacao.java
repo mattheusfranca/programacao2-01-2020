@@ -25,10 +25,6 @@ public class Ordenacao {
 		contaCorrenteBradesco.saque(100f);
 		contaPopupancaBradesco.deposito(100f);
 		
-		//Ordenação será realizada em função da implementação de Comparable<ContaCorrente> presente na classe ContaCorrente
-		Collections.sort(bradesco.getContas());
-		bradesco.imprimeContas();
-		
 		//Utiliza-se comparator para termos uma alternativa à ordenação da classe que utiliza o Comparable
 		Collections.sort(bradesco.getContas(), new Comparator<ContaCorrente>() {
 			@Override
@@ -42,6 +38,7 @@ public class Ordenacao {
 		
 		bradesco.imprimeContas();
 		
+		
 		//Utiliza-se comparator para termos ordenação em função do saldo descrescente 
 		Collections.sort(bradesco.getContas(), new Comparator<ContaCorrente>() {
 			@Override
@@ -54,6 +51,8 @@ public class Ordenacao {
 		});
 		
 		bradesco.imprimeContas();
+		
+		
 	}
 
 }
