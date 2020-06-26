@@ -1,4 +1,4 @@
-package br.udesc.prog2.exemplo.collections.ordenacao;
+package br.udesc.prog2.exemplo.collections.ordenacao.comparator;
 
 //https://blog.caelum.com.br/ordenando-colecoes-com-comparable-e-comparator/
 //https://www.caelum.com.br/apostila-java-orientacao-objetos/collections-framework/#ordenao-collectionssort
