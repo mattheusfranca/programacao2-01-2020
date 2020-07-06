@@ -17,24 +17,25 @@ import java.util.List;
  * @author matth
  */
 public class App {
+
     public static void main(String[] args) {
 
-		Banco bradesco = new Banco("Bradesco");
-		ContaCorrente contaCorrente1 = bradesco.criarContaCorrente("Cliente1");
-                ContaCorrente contaCorrente2 = bradesco.criarContaCorrente("Cliente2");
-                
-                System.out.println(contaCorrente1.compareTo(contaCorrente2));
-                
-                contaCorrente1.deposito(100f);
-                System.out.println(contaCorrente1.compareTo(contaCorrente2));               
-                
-                List<ContaCorrente> contas = bradesco.getContas();
-                
-                bradesco.imprimeContas();
-                
-                //O método sort utiliza o método compareTo (interface comparable) para realizar a ordenação
-                Collections.sort(contas);
-                
-                bradesco.imprimeContas();                
+        Banco bradesco = new Banco("Bradesco");
+        ContaCorrente contaCorrente1 = bradesco.criarContaCorrente("Cliente1");
+        ContaCorrente contaCorrente2 = bradesco.criarContaCorrente("Cliente2");
+
+        System.out.println(contaCorrente1.compareTo(contaCorrente2));
+
+        contaCorrente1.deposito(100f);
+        System.out.println(contaCorrente1.compareTo(contaCorrente2));
+
+        List<ContaCorrente> contas = bradesco.getContas();
+
+        bradesco.imprimeContas();
+
+        //O método sort utiliza o método compareTo (interface comparable) para realizar a ordenação
+        Collections.sort(contas);
+
+        bradesco.imprimeContas();
     }
 }

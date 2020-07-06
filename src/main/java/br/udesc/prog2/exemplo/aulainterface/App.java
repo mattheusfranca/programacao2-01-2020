@@ -25,6 +25,10 @@ public class App
     	
     	System.out.println(a1.autentica("123"));
     	System.out.println(a2.autentica("345"));
+        
+        List<Autenticavel> autenticaveis = new ArrayList<>();
+        autenticaveis.add(a1);
+        autenticaveis.add(a2);
     	
     	
     }

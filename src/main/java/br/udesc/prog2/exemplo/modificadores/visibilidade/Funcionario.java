@@ -5,10 +5,6 @@
  */
 package br.udesc.prog2.exemplo.modificadores.visibilidade;
 
-/**
- *
- * @author matth
- */
 public class Funcionario {
     /* 
     Acessível de qualquer local. Também possibilita sua alteração de qualquer local

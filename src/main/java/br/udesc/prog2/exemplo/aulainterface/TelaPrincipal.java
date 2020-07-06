@@ -32,14 +32,15 @@ public class TelaPrincipal extends JFrame implements ActionListener {
 		btn2.setBounds(146, 135, 89, 23);
 		contentPane.add(btn2);
 		//Adicionando ação ao botão através de classe anônima
+                
+                //Acao acao = new Acao();
+                //btn2.addActionListener(acao);
 		btn2.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent arg0) {
-				System.out.println("Clique no botão Botão 2");
-				
-			}
-		});
-		
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        System.out.print("Exemplo de clique");
+                    }
+                });
 		
 		JButton btn3 = new JButton("Botão 3");
 		btn3.setBounds(146, 169, 89, 23);

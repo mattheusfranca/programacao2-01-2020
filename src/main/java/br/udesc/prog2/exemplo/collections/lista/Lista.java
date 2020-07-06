@@ -10,7 +10,7 @@ import br.udesc.prog2.exercicio.banco.Banco;
 public class Lista {
 	
 	public static void main(String[] args) {
-		List<Banco> bancos = new ArrayList<Banco>();
+		List<Banco> bancos = new ArrayList<>();
 		
 		bancos.add(new Banco("Banco do Brasil"));
 		bancos.add(new Banco("Bradesco"));

@@ -5,10 +5,7 @@
  */
 package br.udesc.prog2.exemplo.modificadores.visibilidade;
 
-/**
- *
- * @author matth
- */
+
 public class App {
     public static void main(String[] args){
         Funcionario funcionario = new Funcionario(1, "Marina", "12345", "DevOps");
