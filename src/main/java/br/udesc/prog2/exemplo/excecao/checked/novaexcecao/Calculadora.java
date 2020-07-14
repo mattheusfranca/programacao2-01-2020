@@ -13,8 +13,15 @@ public class Calculadora {
             throw new DivisaoPorZeroException();
         resultado /= x;
     }
+    
+    public void divideEspecial(float x) throws DivisaoPorZeroException {
+        divide(x);
+    }
         
-    public void soma(float x){
+        
+    public void soma(float x)throws SomaException {
+        if(resultado + x > 100)
+            throw new SomaException();
         resultado += x;
     }
     

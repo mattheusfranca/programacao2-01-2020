@@ -15,6 +15,7 @@ public class App3 {
             System.out.println(alunos.get(2));
             //Posição 3 não existe
             System.out.println(alunos.get(3));
+            
         }
         catch (IndexOutOfBoundsException e){
             System.out.println("Não existe aluno nesta posição da lista de alunos");

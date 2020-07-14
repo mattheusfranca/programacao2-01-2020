@@ -10,7 +10,8 @@ public class App1 {
             resultado = x/y;
         }
         catch (ArithmeticException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         System.out.println("resultado: " + resultado);
     }

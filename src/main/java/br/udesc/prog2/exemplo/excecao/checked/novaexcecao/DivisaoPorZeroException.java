@@ -4,4 +4,8 @@ public class DivisaoPorZeroException extends Exception {
     public DivisaoPorZeroException(){
         super("Não é possivel realizar a divisao por zero");
     }
+    
+    public DivisaoPorZeroException(String msg){
+        super(msg);
+    }
 }
