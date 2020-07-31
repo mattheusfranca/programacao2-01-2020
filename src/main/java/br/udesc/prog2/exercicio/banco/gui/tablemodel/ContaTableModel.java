@@ -11,10 +11,10 @@ public class ContaTableModel extends AbstractTableModel  {
 	private List<ContaCorrente> contas;
 	private String[] nomeColunas = {"Código", "Banco", "Nome", "Saldo"};
 	
-    private final int COLUNA_CODIGO = 0;
-    private final int COLUNA_BANCO = 1;
-    private final int COLUNA_NOME = 2;
-    private final int COLUNA_SALDO = 3;
+        private final int COLUNA_CODIGO = 0;
+        private final int COLUNA_BANCO = 1;      
+        private final int COLUNA_NOME = 2;
+        private final int COLUNA_SALDO = 3;
     
 	public ContaTableModel(List<ContaCorrente> contas) {
 		this.contas = contas;
@@ -55,7 +55,7 @@ public class ContaTableModel extends AbstractTableModel  {
         return true;
     }
 
-
+    //Não é obrigatório implementar
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         //o argumento recebido pelo método é do tipo Object
